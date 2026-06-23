@@ -10,19 +10,19 @@ One of the original pictures and the rendering results are as Figure~\ref{fig:Ko
 	\centering
 	
 
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectA/Kobe_mesh.png}
-		\caption{Kobe Mesh(Floating points and background are manually eliminated)}
+		\caption{Kobe Mesh}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectA/Kobe_color.png}
 		\caption{Kobe Color}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectA/original_Kobe.jpg}
 		\caption{Original Kobe}
@@ -45,72 +45,67 @@ Each training takes about \textbf{20 minutes}(10000 epochs), the rendering resul
 \begin{figure}[h]
 	\centering
 	
-	%================ 第一组：Astronaut =================
-	\begin{subfigure}{0.25\textwidth}
+	% 四个子图并排，宽度设为 0.22\textwidth（合计 0.88，剩余由 \hfill 分配间距）
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/astronaut_mesh.png}
 		\caption{Astronaut Mesh}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/astronaut_color.png}
 		\caption{Astronaut Color}
-		\label{Astronaut Color}
+		\label{Astronaut Color}   % 子图标签保留原样
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/astronaut_texture_kd.jpg}
 		\caption{Astronaut Texture}
 	\end{subfigure}
-	
-	\vspace{0.6cm}
-	
-	%================ 第二组：Bunny =================
-		% 第一张图（左边）
-	\begin{subfigure}{0.8\textwidth}
+	\hfill
+	\begin{subfigure}{0.3\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{figures/task1/objectB/astronauts.png} % 替换为你的第一张图片路径
-		\caption{Astronauts} % 替换为你想要的图注
+		\includegraphics[width=\linewidth]{figures/task1/objectB/astronauts.png}
+		\caption{Astronauts}
 	\end{subfigure}
-	\hfill % 左右两张图之间的弹性间距
-	\caption{Astronauts}  % \caption 在前
-	\label{fig:Astronauts} 
+	
+	\caption{Astronauts}   % 总标题
+	\label{fig:Astronauts} % 总标签
 \end{figure}
 
 
-
 \begin{figure}[h]
-		\begin{subfigure}{0.25\textwidth}
+	\centering
+	
+	% 四个子图并排，宽度设为 0.22\textwidth（四个合计 0.88，剩余由 \hfill 分配间距）
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/bunny_mesh.png}
 		\caption{Bunny Mesh}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/bunny_color.png}
 		\caption{Bunny Color}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/bunny_texture_kd.jpg}
 		\caption{Bunny Texture}
 	\end{subfigure}
-	
-	\centering
-	\vspace{0.6cm}
-
-	% 第二张图（右边）
-	\begin{subfigure}{0.8\textwidth}
+	\hfill
+	\begin{subfigure}{0.3\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{figures/task1/objectB/bunnys.png} % 替换为你的第二张图片路径
-		\caption{Bunnys} % 替换为你想要的图注
+		\includegraphics[width=\linewidth]{figures/task1/objectB/bunnys.png}
+		\caption{Bunnys}
 	\end{subfigure}
-	\caption{Bunnys}  % \caption 在前
-	\label{fig:Bunnys} 
+	
+	\caption{Bunnys}
+	\label{fig:Bunnys}
 \end{figure}
 
 
@@ -118,29 +113,26 @@ Each training takes about \textbf{20 minutes}(10000 epochs), the rendering resul
 \begin{figure}[h]
 	\centering
 	
-	% 第一行
-	\begin{subfigure}{0.4\textwidth}
+	% 四个子图并排，宽度设为 0.22\textwidth（四个合计 0.88，剩余由 \hfill 分配间距）
+	\begin{subfigure}{0.22\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/sds_loss.png}
 		\caption{SDS Loss}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.22\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/opaque_loss.png}
 		\caption{Opaque Loss}
 	\end{subfigure}
-	
-	\vspace{0.5cm} % 行间距，可以根据需要调整
-	
-	% 第二行
-	\begin{subfigure}{0.4\textwidth}
+	\hfill
+	\begin{subfigure}{0.22\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/sparsity_loss.png}
 		\caption{Sparsity Loss}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.22\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/orient_loss.png}
 		\caption{Orient Loss}
@@ -176,43 +168,43 @@ In this section, Figure~\ref{fig:OriginalCs} is trained.
 	\centering
 	
 	% 第一张图（左边）
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.3\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper_rgba.png} % 第一张图片路径
+		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper_rgba.png}
 		\caption{Firekeeper(threestudio)}
 	\end{subfigure}
-	\hfill % 两张图之间的间距
+	\hspace{0.02\textwidth}  % 固定小间距，比 \hfill 更紧凑
 	% 第二张图（右边）
-	\begin{subfigure}{0.4\textwidth}
+	\begin{subfigure}{0.3\textwidth}
 		\centering
-		\includegraphics[width=\linewidth]{figures/task1/objectC/cute_robot_rgba.png} % 替换为你的第二张图片路径
+		\includegraphics[width=\linewidth]{figures/task1/objectC/cute_robot_rgba.png}
 		\caption{Cute Astronaut Robot(Ours)}
 	\end{subfigure}
-	\caption{Original Cs}  % \caption 在前
-	\label{fig:OriginalCs} 
-
+	
+	\caption{Original Cs}
+	\label{fig:OriginalCs}
 \end{figure}
 
 
-Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the rendering results (Fig~\ref{fig:Firekeepers}, Fig~\ref{fig:firekeeper_vertical}, Fig~\ref{fig:Robots}, Fig~\ref{fig:Robot_vertical}, Fig~\ref{fig:RenderingCs}) and training dynamics(Fig~\ref{fig:objectC_losses}) are showed.
+Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the rendering results (Fig~\ref{fig:Firekeepers}, Fig~\ref{fig:firekeeper_vertical}, Fig~\ref{fig:Robots}, Fig~\ref{fig:Robot_vertical}) and training dynamics(Fig~\ref{fig:objectC_losses}) are showed.
 
 \begin{figure}[h]
 	\centering
 	
 	%================ 第一组：Astronaut =================
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper_mesh.png}
 		\caption{Firekeeper Mesh}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper_color.png}
 		\caption{Firekeeper Color}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper_texture_kd.jpg}
 		\caption{Firekeeper Texture}
@@ -228,46 +220,48 @@ Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the ren
 \begin{figure}[h]
 	\centering
 	
-	% 第一张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/firekeeper1.png} % 替换为你的实际路径
-
+	% 第一行：两张图并排
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper1.png}
+	\end{minipage}
+	\hfill  % 水平间距
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper2.png}
+	\end{minipage}
 	
-	\vspace{0.3cm} % 调整图片之间的垂直间距
+	\vspace{0.3cm}  % 行间距（与您原来保持一致）
 	
-	% 第二张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/firekeeper2.png}
-
-	
-	\vspace{0.3cm}
-	
-	% 第三张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/firekeeper3.png}
-
-	
-	\vspace{0.3cm}
-	
-	% 第四张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/firekeeper4.png}
-
+	% 第二行：两张图并排
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper3.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper4.png}
+	\end{minipage}
 	
 	\caption{Different Viewpoints}
-	\label{fig:firekeeper_vertical}
+	\label{fig:firekeeper_vertical}   % 原 label 完全保留
 \end{figure}
 
 \begin{figure}[h]
-		\begin{subfigure}{0.25\textwidth}
+		\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/cute_robot_mesh.png}
 		\caption{Robot Mesh}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/cute_robot_color.png}
 		\caption{Robot Color}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{0.25\textwidth}
+	\begin{subfigure}{0.2\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/robot_texture_kd.jpg}
 		\caption{Robot Texture}
@@ -279,111 +273,103 @@ Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the ren
 \begin{figure}[h]
 	\centering
 	
-	% 第一张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/robot1.png} % 替换为你的实际路径
+	% 第一行：robot1 和 robot2 并排
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/robot1.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/robot2.png}
+	\end{minipage}
 	
+	\vspace{0.3cm}  % 行间距，与原代码一致
 	
-	\vspace{0.3cm} % 调整图片之间的垂直间距
-	
-	% 第二张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/robot2.png}
-	
-	
-	\vspace{0.3cm}
-	
-	% 第三张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/robot3.png}
-	
-	
-	\vspace{0.3cm}
-	
-	% 第四张
-	\includegraphics[width=0.6\textwidth]{figures/task1/objectC/robot4.png}
-	
+	% 第二行：robot3 和 robot4 并排
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/robot3.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/robot4.png}
+	\end{minipage}
 	
 	\caption{Different Viewpoints}
-	\label{fig:Robot_vertical}
+	\label{fig:Robot_vertical}   % 原标签完全保留
 \end{figure}
 
-
-
-\begin{figure}[h]
-	\centering
-	
-	% 第一张图（左边）
-	\begin{subfigure}{0.48\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{figures/task1/objectC/opaque_loss.png} % 第一张图片路径
-		\caption{Firekeeper(threestudio)}
-	\end{subfigure}
-	\hfill % 两张图之间的间距
-	% 第二张图（右边）
-	\begin{subfigure}{0.48\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{figures/task1/objectC/sparsity_loss.png} % 替换为你的第二张图片路径
-		\caption{Cute Astronaut Robot(Ours)}
-	\end{subfigure}
-	\caption{Rendering Result}  % \caption 在前
-	\label{fig:RenderingCs} 
-\end{figure}
 
 
 \begin{figure*}[h]
 	\centering
 	
-	%==================== 第一组：SDS Loss ====================
-	\begin{subfigure}[t]{0.32\textwidth}
+	%==================== 第一行：前两张原图 + 第三张（loss_sd）====================
+	\begin{subfigure}[t]{0.31\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/opaque_loss.png}
+		\caption{Firekeeper(threestudio)}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.31\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/task1/objectC/sparsity_loss.png}
+		\caption{Cute Astronaut Robot(Ours)}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/losses/loss_sd.png}
 		\caption{SDS loss}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.32\textwidth}
+	
+	\vspace{0.2cm}  % 行间距压缩
+	
+	%==================== 第二行：第4~6张 ====================
+	\begin{subfigure}[t]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/losses/loss_sd_3d.png}
 		\caption{3D SDS loss}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.32\textwidth}
+	\begin{subfigure}[t]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/losses/grad_norm.png}
 		\caption{Gradient norm}
 	\end{subfigure}
-	
-	\vspace{0.5cm}
-	
-	%==================== 第二组：Regularization ====================
-	\begin{subfigure}[t]{0.32\textwidth}
+	\hfill
+	\begin{subfigure}[t]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/losses/grad_norm_3d.png}
 		\caption{3D gradient norm}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.32\textwidth}
+	
+	\vspace{0.2cm}
+	
+	%==================== 第三行：第7~9张 ====================
+	\begin{subfigure}[t]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/losses/loss_mask.png}
 		\caption{Mask loss}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.32\textwidth}
+	\begin{subfigure}[t]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/losses/loss_normal_consistency.png}
 		\caption{Normal consistency loss}
 	\end{subfigure}
-	
-	\vspace{0.5cm}
-	
-	%==================== 第三组：Reconstruction ====================
-	\begin{subfigure}[t]{0.45\textwidth}
+	\hfill
+	\begin{subfigure}[t]{0.31\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/losses/rgb_loss.png}
 		\caption{RGB reconstruction loss}
 	\end{subfigure}
 	
 	\caption{Training losses and optimization statistics for Object C.}
-	\label{fig:objectC_losses}
+	\label{fig:objectC_losses}   % 沿用原来的标签，您也可以改为 fig:RenderingCs
 \end{figure*}
-
 
 We can see that the visualization results of both models have good and smooth shape and color distribution.
 
