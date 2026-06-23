@@ -21,8 +21,7 @@
 \usepackage{subcaption}
 \usepackage{graphicx}
 \title{
-    Computer Vision Final Project Report\\
-    Neural Rendering, AIGC-based 3D Generation, and ACT Policy Generalization
+    Computer Vision Final Project Report
 }
 
 \author{
@@ -40,7 +39,9 @@
 \begin{abstract}
 This report presents two computer vision and embodied AI tasks.
 
-The first task focuses on neural rendering and AIGC-based 3D reconstruction and generation, including real-world multi-view reconstruction, text-to-3D generation, single-image-to-3D generation, and scene fusion rendering. COLMAP, 2D Gaussian Splatting (2DGS), and the pre-trained DREAMFUSION-IF and Magic123 frameworks in threestudio are utilized to construct a complete 3D vision pipeline.
+The first task focuses on neural rendering and AIGC-based 3D reconstruction and generation, including real-world multi-view reconstruction, text-to-3D generation, single-image-to-3D generation, and scene fusion rendering. COLMAP, 2D Gaussian Splatting (2DGS), and the pre-trained DREAMFUSION-IF and Magic123 frameworks in threestudio are utilized to construct a complete 3D vision pipeline. After reconstruction, they were exported as textured meshes and then combined in Blender.
+
+The second task investigates the zero-shot cross-environment generalization of Action Chunking with Transformers (ACT) on the CALVIN benchmark. Experimental results show that multi-environment training substantially improves robustness to visual distribution shifts, reducing the Action $L_1$ Error on an unseen environment by 15.7\% and increasing the rollout success rate from 0\% to 100\%. Furthermore, an ablation study demonstrates that moderate action horizons consistently yield the best performance.
 
 \end{abstract}
 
@@ -53,8 +54,6 @@ This project was completed collaboratively by Yifan Luo and Ming Cheng. Both aut
 \input{sections/task1.tex}
 
 \input{sections/task2.tex}
-
-\input{sections/Conclusion.tex}
 
 \appendix
 
@@ -70,11 +69,15 @@ This project was completed collaboratively by Yifan Luo and Ming Cheng. Both aut
 
 \subsection{Task 2 Repository}
 
-% TODO: add ACT repository link here
+\url{https://github.com/Kevin-LD/lerobot-act-calvin}
 
-\subsection{Task 2 Model Weights}
+\subsection{Task 2 Model Weights and Rollout Visualizations}
 
-% TODO: add model weight download link here
+\url{https://drive.google.com/drive/folders/1UVtHY2a5legxZIZzB76gldc701c19pYH?usp=drive_link}
+
+\subsection{Task 2 Complementary Dataset}
+
+\url{https://huggingface.co/datasets/Kevin-LD/CALVIN_open_drawer/tree/main}
 
 %\bibliographystyle{plainurl}
 %\bibliographystyle{unsrt}
