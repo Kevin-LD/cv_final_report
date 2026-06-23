@@ -1,0 +1,79 @@
+\documentclass{article}
+
+% For submission
+\usepackage[preprint]{neurips_2025}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subcaption}
+
+\title{
+    Computer Vision Final Project Report\\
+    Neural Rendering, AIGC-based 3D Generation, and ACT Policy Generalization
+}
+
+\author{
+    Ming Cheng \\
+    23307130007
+    \And
+    Yifan Luo \\
+    23307130031
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report presents two computer vision and embodied AI tasks.
+
+The first task focuses on neural rendering and AIGC-based 3D reconstruction and generation, including real-world multi-view reconstruction, text-to-3D generation, single-image-to-3D generation, and scene fusion rendering. COLMAP, 2D Gaussian Splatting (2DGS), and the pre-trained DREAMFUSION-IF and Magic123 frameworks in threestudio are utilized to construct a complete 3D vision pipeline.
+
+\end{abstract}
+
+\section*{Team Contribution}
+
+This project was completed collaboratively by Yifan Luo and Ming Cheng. Both authors contributed to project discussion, experimental design, implementation, result analysis, and report writing.
+
+\input{sections/Introduction.tex}
+
+\input{sections/task1.tex}
+
+\input{sections/task2.tex}
+
+\input{sections/Conclusion.tex}
+
+\appendix
+
+\section{Project Resources}
+
+\subsection{Task 1 Repository}
+
+\url{https://github.com/F1shermanCNN/CV-Final-Task1}
+
+\subsection{Task 1 Models, Blender Objects, and Rendering Videos}
+
+\url{https://drive.google.com/drive/folders/104ITdruMWy3bJy7J_qOayYOE7LNySR8B?usp=sharing}
+
+\subsection{Task 2 Repository}
+
+% TODO: add ACT repository link here
+
+\subsection{Task 2 Model Weights}
+
+% TODO: add model weight download link here
+
+\end{document}
