@@ -3,10 +3,10 @@
 \subsubsection{Object A}
 In this section, 87 pictures of Kobe, filmed from different viewpoints, are trained. It takes about \textbf{2min} to extract pose with COLMAP and \textbf{52:11min}(20000 epochs) to train.
 
-One of the original pictures and the rendering results are as follow(the training dynamics will be posed later with the background scene):
+One of the original pictures and the rendering results are as Figure~\ref{fig:Kobe} (the training dynamics will be posed later with the background scene).
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 
@@ -27,9 +27,11 @@ One of the original pictures and the rendering results are as follow(the trainin
 		\includegraphics[width=\linewidth]{figures/task1/objectA/original_Kobe.jpg}
 		\caption{Original Kobe}
 	\end{subfigure}
+	\caption{Kobe}  % \caption 在前
+	\label{fig:Kobe} 
 \end{figure}
 
-We can see that the reconstruction has a relatively good fit, the detailed quality analysis will be shown later in Figure~\ref{fig:2DGS Dynamics}
+We can see that the reconstruction has a relatively good fit, the detailed quality analysis will be shown later in Figure~\ref{fig:2DGS Dynamics}.
 
 \subsubsection{Object B}
 In this section, 2 examples are trained, the prompt are as follow:
@@ -38,9 +40,9 @@ In this section, 2 examples are trained, the prompt are as follow:
 	\item A Michelangelo-style statue of an astronaut.
 \end{itemize}
 
-Each training takes about \textbf{20 minutes}(10000 epochs), the rendering results and training dynamics are as follow:
+Each training takes about \textbf{20 minutes}(10000 epochs), the rendering results and training dynamics are as Figure~\ref{fig:Astronauts}, Figure~\ref{fig:Bunnys} and Figure~\ref{fig:Blosses}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	%================ 第一组：Astronaut =================
@@ -73,12 +75,13 @@ Each training takes about \textbf{20 minutes}(10000 epochs), the rendering resul
 		\caption{Astronauts} % 替换为你想要的图注
 	\end{subfigure}
 	\hfill % 左右两张图之间的弹性间距
-
+	\caption{Astronauts}  % \caption 在前
+	\label{fig:Astronauts} 
 \end{figure}
 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 		\begin{subfigure}{0.25\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectB/bunny_mesh.png}
@@ -106,12 +109,13 @@ Each training takes about \textbf{20 minutes}(10000 epochs), the rendering resul
 		\includegraphics[width=\linewidth]{figures/task1/objectB/bunnys.png} % 替换为你的第二张图片路径
 		\caption{Bunnys} % 替换为你想要的图注
 	\end{subfigure}
-
+	\caption{Bunnys}  % \caption 在前
+	\label{fig:Bunnys} 
 \end{figure}
 
 
 %================ Loss Functions =================
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	% 第一行
@@ -142,8 +146,8 @@ Each training takes about \textbf{20 minutes}(10000 epochs), the rendering resul
 		\caption{Orient Loss}
 	\end{subfigure}
 	
-	\caption{Visualization results of generated 3D objects and training loss functions.}
-	\label{fig:results_and_losses}
+	\caption{Training Dynamics.}
+	\label{fig:Blosses}
 \end{figure}
 
 We can see from the model visualizations that the astronaut has a relatively less smoother outfit and less appropriate color distribution, this may because that the pre-trained model doesn't have enough information compared with the bunny.
@@ -166,9 +170,9 @@ Orient Loss demonstrates a characteristic “spike-then-decay” behavior. This 
 
 
 \subsubsection{Object C}
-In this section, the following picture is trained:
+In this section, Figure~\ref{fig:OriginalCs} is trained.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	% 第一张图（左边）
@@ -184,13 +188,15 @@ In this section, the following picture is trained:
 		\includegraphics[width=\linewidth]{figures/task1/objectC/cute_robot_rgba.png} % 替换为你的第二张图片路径
 		\caption{Cute Astronaut Robot(Ours)}
 	\end{subfigure}
+	\caption{Original Cs}  % \caption 在前
+	\label{fig:OriginalCs} 
 
 \end{figure}
 
 
-Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the rendering results and training dynamics are as follow:
+Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the rendering results (Fig~\ref{fig:Firekeepers}, Fig~\ref{fig:firekeeper_vertical}, Fig~\ref{fig:Robots}, Fig~\ref{fig:Robot_vertical}, Fig~\ref{fig:RenderingCs}) and training dynamics(Fig~\ref{fig:objectC_losses}) are showed.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	%================ 第一组：Astronaut =================
@@ -211,14 +217,15 @@ Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the ren
 		\includegraphics[width=\linewidth]{figures/task1/objectC/firekeeper_texture_kd.jpg}
 		\caption{Firekeeper Texture}
 	\end{subfigure}
-	
+	\caption{Firekeepers}  % \caption 在前
+	\label{fig:Firekeepers} 
 	
 \end{figure}
 
 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	% 第一张
@@ -247,7 +254,7 @@ Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the ren
 	\label{fig:firekeeper_vertical}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
 		\begin{subfigure}{0.25\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{figures/task1/objectC/cute_robot_mesh.png}
@@ -265,9 +272,11 @@ Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the ren
 		\includegraphics[width=\linewidth]{figures/task1/objectC/robot_texture_kd.jpg}
 		\caption{Robot Texture}
 	\end{subfigure}
+	\caption{Robots}  % \caption 在前
+	\label{fig:Robots} 
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	% 第一张
@@ -298,7 +307,7 @@ Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the ren
 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	% 第一张图（左边）
@@ -314,11 +323,12 @@ Each training takes about \textbf{30min}(coarse)+\textbf{30min}(refine), the ren
 		\includegraphics[width=\linewidth]{figures/task1/objectC/sparsity_loss.png} % 替换为你的第二张图片路径
 		\caption{Cute Astronaut Robot(Ours)}
 	\end{subfigure}
-	
+	\caption{Rendering Result}  % \caption 在前
+	\label{fig:RenderingCs} 
 \end{figure}
 
 
-\begin{figure*}[H]
+\begin{figure*}[h]
 	\centering
 	
 	%==================== 第一组：SDS Loss ====================

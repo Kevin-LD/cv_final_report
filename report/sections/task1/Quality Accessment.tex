@@ -31,8 +31,8 @@ For the training time, Object B is the fastest, Object Cs all takes about an hou
 Specifically, Object A(COLMAP+2DGS) is variable.
 
 
-Considering the following training dynamic. We can see that the Garden has 128395 points compared with 5829 points of Kobe at the beginning of the training. This is because of the huge and high resolution dataset of Garden,which helps capture massive amounts of points during the COLMAP part. This takes time(1:12:42hour), but allows faster 2DGS(19:30min). 
-\begin{figure}[H]
+Considering the training dynamic of Figure~\ref{figure:Feature Points}. We can see that the Garden has 128395 points compared with 5829 points of Kobe at the beginning of the training. This is because of the huge and high resolution dataset of Garden,which helps capture massive amounts of points during the COLMAP part. This takes time(1:12:42hour), but allows faster 2DGS(19:30min). 
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.4\linewidth]{figures/task1/background/num_points.png}
 	\caption{Feature Points}
@@ -47,8 +47,8 @@ For Object A and Background Garden, the visualization looks good and the overall
 
 For Object Bs, it's easy to see that the color distribution is not that appropriate as they're in the real world as Figure~\ref{Astronaut Color} Also the details are rough and unsmooth when taking a close look.
 
-For Object Cs, the color distributions are better than Object Bs. The modeling of the front and back are relatively good. However, the side view is worse than the real view, often appearing thinner. This is because the model only receives a frontal photo of the object, making it difficult to accurately judge the thickness:Figure~\ref{fig:firekeeper_vertical} and Figure~\ref{fig:Robot_vertical}. The following pictures show some of their flaws:
-\begin{figure}[H]
+For Object Cs, the color distributions are better than Object Bs. The modeling of the front and back are relatively good. However, the side view is worse than the real view, often appearing thinner. This is because the model only receives a frontal photo of the object, making it difficult to accurately judge the thickness:Figure~\ref{fig:firekeeper_vertical} and Figure~\ref{fig:Robot_vertical}. Figure~\ref{fig:objectC_failures} show some of their flaws:
+\begin{figure}[h]
 	\centering
 	
 	% 第一组：Firekeeper

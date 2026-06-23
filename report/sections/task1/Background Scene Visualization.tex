@@ -1,8 +1,8 @@
 \subsection{Background Scene Visualization}
 In this section, 185 pictures of garden(picking $\frac{1}{4}$ of the original resolution for efficiency) are trained. It takes about \textbf{1:12:42hour} to extract pose with COLMAP and \textbf{19:30min}(20000 epochs) to train.
 
-One of the original pictures and the rendering results are as follow:
-\begin{figure}[H]
+One of the original pictures and the rendering results are as Figure~\ref{fig:Gradens}.
+\begin{figure}[h]
 	\centering
 	
 
@@ -25,7 +25,8 @@ One of the original pictures and the rendering results are as follow:
 	\end{subfigure}
 	
 	\vspace{0.6cm}
-	
+	\caption{Gardens}  % \caption 在前
+	\label{fig:Gradens} 
 	
 \end{figure}
 In this part, 2 meshes are exported(bounded and unbounded), where the unbounded mesh is in a form of a whole box. The box has an irregular outer shell and sky because these parts are not included in the images, while the rest of the model looks very good.
@@ -35,9 +36,9 @@ The detailed quality analysis will be shown later.
 
 
 
-The training dynamics are as follow:
+The training dynamics are as Figure~\ref{fig:2DGS Dynamics}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	
 	% 第一行
@@ -59,7 +60,7 @@ The training dynamics are as follow:
 
 \end{figure}
 
-Both loss curves generally show a downward trend, and the red curve (Garden) is more stable and has fewer peaks than the blue curve (Kobe). This is likely because the Garden has 185 images, twice the dataset of Kobe, thus capturing color and normal information more accurately. Also, Garden captures way more feature points after COLMAP as is shown in Figure~\ref{figure:Feature Points}
+Both loss curves generally show a downward trend, and the red curve (Garden) is more stable and has fewer peaks than the blue curve (Kobe). This is likely because the Garden has 185 images, twice the dataset of Kobe, thus capturing color and normal information more accurately. Also, Garden captures way more feature points after COLMAP as is shown in Figure~\ref{figure:Feature Points}.
 
 
 
